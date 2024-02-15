@@ -98,6 +98,8 @@ class Greens extends Component {
                 phone={teacherData[selectedTeacherForPopup].phone}
                 teacherId={teacherData[selectedTeacherForPopup].teacherId}
                 email={teacherData[selectedTeacherForPopup].email}
+                qualification={teacherData[selectedTeacherForPopup]. qualification}
+
                 onClose={this.closePopup}
               />
             )}

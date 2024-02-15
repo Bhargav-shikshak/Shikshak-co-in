@@ -185,7 +185,7 @@ class Teachers extends Component {
                     name="password"
                     value={password}
                     onChange={this.handleChange}
-                    placeholder="Enter your password"
+                    placeholder="Enter at least 7 digits or alphabets"
                     required
                   />
                 </div>

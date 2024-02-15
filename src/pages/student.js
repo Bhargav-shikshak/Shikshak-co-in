@@ -263,7 +263,7 @@ class Students extends Component {
                   name="password"
                   value={password}
                   onChange={this.handleChange}
-                  placeholder="Enter your password"
+                  placeholder="Enter at least 7 digits or alphabets"
                   required
                 />
               </div>
@@ -335,7 +335,7 @@ class Students extends Component {
                 />
               </div>
               <div className="input-box">
-                <span className="details">College</span>
+                <span className="details">School/College</span>
                 <input
                   type="text"
                   name="college"

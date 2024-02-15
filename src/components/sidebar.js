@@ -35,13 +35,13 @@ const Sidebar = () => {
       
         <li>
           <Link to="React-Sidebar-example/Login">
-            <span className="right-align">LogIn</span>
+            <span className="right-align">StudentLogIn</span>
           </Link>
          
         </li>
         <li>
           <Link to="React-Sidebar-example/Loginteacher">
-            <span className="right-align">Loginteacher</span>
+            <span className="right-align">TeacherLogin</span>
           </Link>
          
         </li>

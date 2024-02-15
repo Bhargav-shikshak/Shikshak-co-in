@@ -1,5 +1,8 @@
 .greens {
     font-family: Arial, sans-serif;
+    height:auto;
+    margin-top: 20px;
+    width: 700px;
   }
   
   .title {
@@ -9,7 +12,7 @@
   .table-container {
     max-height: 300px; /* Adjust the max-height as needed */
     overflow: auto;
-    max-width: 600px;
+   margin-bottom: 20px;
   }
   .teacher-image {
     width: 40px; /* Adjust the width as needed */

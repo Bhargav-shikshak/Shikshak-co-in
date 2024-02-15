@@ -1,7 +1,7 @@
 /* pop.css */
 
 .popup {
-  position:absolute;
+  position: absolute;
   top: 90px;
   left: 0;
   width: 100%;
@@ -9,6 +9,7 @@
   /* Semi-transparent background */
   display: flex;
   justify-content: center;
+  margin-left: 80px;
   align-items: center;
 }
 
@@ -53,4 +54,14 @@
 
 .popup-content button:last-child {
   margin-right: 0;
+}
+
+/* Change scrollbar color to blue */
+.popup-content::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  background-color: blue; /* Color of the thumb */
+  border-radius: 6px; /* Rounded corners */
 }

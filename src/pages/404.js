@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 import "./404.css";
 /*  import { type } from "@testing-pbrary/user-event/dist/type";*/
 class Home extends React.Component {
@@ -14,9 +14,9 @@ class Home extends React.Component {
       <div class="h-content">
         <h1><span>Shikshak</span><br></br>A  Learning plateform</h1>
       <p>Connect, Learn & Grow </p>
-     
+      <Link to="/React-Sidebar-example/Login">
       <button class="btn">Get Started</button>
-    
+    </Link>
       </div>
 
       <div class="image">
@@ -29,14 +29,14 @@ class Home extends React.Component {
   <div class="card1">
  
       <div class="card-content">
-        <h3>Student login</h3>
+      <Link to="/React-Sidebar-example/Login"> <h3>Student login</h3></Link>
         
         </div>
     </div>
     <div class="card2">
   
       <div class="card-content">
-        <h3>Teacher Login</h3>
+      <Link to="React-Sidebar-example/teacher"> <h3>Teacher Login</h3></Link> 
         
         </div>
     </div>

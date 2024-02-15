@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { getDatabase, ref, push } from "firebase/database";
 import "./pop.css"; // Add the CSS for styling the popup
 
-const Popup = ({ teacherName,address,phone,teacherId, email,onClose }) => {
+const Popup = ({ teacherName,address,phone,teacherId, email, qualification,onClose }) => {
   // State to store input values
  
   const [Request, setRequest] = useState("Request");
@@ -22,6 +22,7 @@ const Popup = ({ teacherName,address,phone,teacherId, email,onClose }) => {
       Location: address,
       Status:Request,
        email:email,
+       qualification: qualification,
      
 
       timestamp: Date.now(),
@@ -91,6 +92,17 @@ const Popup = ({ teacherName,address,phone,teacherId, email,onClose }) => {
           
           />
         </div>
+       
+        <div>
+          <label>qualification:</label>
+          <input
+            type="text"
+            id="qualification"
+            value={address}
+          
+          />
+        </div>
+
         <div>
           <label>Status:</label>
           <input
@@ -100,6 +112,7 @@ const Popup = ({ teacherName,address,phone,teacherId, email,onClose }) => {
             onChange={(e) => setRequest(e.target.value)}
           />
         </div>
+
         
         
         <button onClick={handleSubmit}>Submit</button>
