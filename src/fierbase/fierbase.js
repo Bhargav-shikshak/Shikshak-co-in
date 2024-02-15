@@ -4,14 +4,22 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDhjOzUMn2YJ1Wgt8DDmDLYBGE6WYumzmw",
-  authDomain: "test-2b2b0.firebaseapp.com",
-  databaseURL: "https://test-2b2b0-default-rtdb.firebaseio.com",
-  projectId: "test-2b2b0",
-  storageBucket: "test-2b2b0.appspot.com",
-  messagingSenderId: "343696759283",
-  appId: "1:343696759283:web:b049e4293912f475125a86",
-  measurementId: "G-B285ZSHFJY"
+  apiKey: "AIzaSyA54xx6hOxIGs9kgQ2Ycwf-s1b71ZWTdC8",
+
+  authDomain: "ben10-8cc74.firebaseapp.com",
+
+  databaseURL: "https://ben10-8cc74-default-rtdb.firebaseio.com",
+
+  projectId: "ben10-8cc74",
+
+  storageBucket: "ben10-8cc74.appspot.com",
+
+  messagingSenderId: "65797307844",
+
+  appId: "1:65797307844:web:40d6fb12ec64626825b891",
+
+  measurementId: "G-T79DZBMWRS"
+
 };
 
 const app = initializeApp(firebaseConfig);
