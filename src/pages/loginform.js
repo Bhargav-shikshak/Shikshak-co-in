@@ -81,33 +81,6 @@ const DisplayComponent = ({ user, studentId, studentName, studentClass }) => {
       </div>
     
 
-      <div style={{ border: "2px solid white", padding: "10px" ,width:"70%", boxShadow: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset" }}>
-        {teacherData ? (
-          <>
-            <h2 style={{borderBottom:"2px solid black" , textAlign:"center"}}>UPCOMING CLASSES</h2>
-            <ul >
-              <li>Name: {teacherData.Name}</li> 
-              <li>Teacher ID: {teacherData.TeacherId}</li>
-              <li>Subject: {teacherData.subject}</li>
-              <li>Status: {teacherData.Status}</li>
-              <li>Timestamp: {teacherData.timestamp}</li>
-              {/* Add more properties as needed */}
-            </ul>
-            <h2 style={{borderBottom:"2px solid black" , textAlign:"center"}}>UPLOADS</h2>
-            <div style={{ background:"silver", height:"70px", borderRadius:"10px"}}>
-                <p>VIDEOS</p>
-            </div>
-            <div style={{ background:"lightgrey", height:"70px", borderRadius:"10px"}}>
-                <p>VIDEOS</p>
-            </div>
-            <div style={{ background:"silver", height:"70px", borderRadius:"10px"}}>
-                <p>VIDEOS</p>
-            </div>
-          </>
-        ) : (
-          <p>No teacher data found for the current studentId.</p>
-        )}
-      </div>
     </div>
     
     </div> 
