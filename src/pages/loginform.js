@@ -79,7 +79,6 @@ const DisplayComponent = ({ user, studentId, studentName, studentClass }) => {
 }}>
         <Greens />
       </div>
-    
 
     </div>
     
