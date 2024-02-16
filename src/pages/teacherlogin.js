@@ -13,7 +13,7 @@ import { app } from "../fierbase/fierbase"; // Assuming you have the correct pat
 
 const provider = new GoogleAuthProvider();
 
-const Login = () => {
+const Login1 = () => {
   const [user, setUser] = useState(null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -133,4 +133,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Login1;
