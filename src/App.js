@@ -9,7 +9,7 @@ import Dogs from "./pages/student" ;
 import ErrorPage from "./pages/404";
 import GoogleSignUp from "./fierbase/auth";
 import Login from "./pages/loginform";
-import Loginteacher from "./pages/teacherlogin";
+import Login1 from "./pages/teacherlogin";
 
 function App() {
   
@@ -26,26 +26,26 @@ function App() {
                 element={<Home />}
               />
               <Route
-                path={"React-Sidebar-example/teacher"}
+                path={"teacher"}
                 element={<Cats />}
               />
               <Route
-                path={"React-Sidebar-example/student"}
+                path={"student"}
                 element={<Dogs />}
               />
 
 
 <Route
-                path={"React-Sidebar-example/GoogleSignUp"}
+                path={"GoogleSignUp"}
                 element={<GoogleSignUp />}
               />
               <Route
-                path={"React-Sidebar-example/Login"}
+                path={"Login"}
                 element={<Login />}
               />
                <Route
-                path={"React-Sidebar-example/Loginteacher"}
-                element={<Loginteacher/>}
+                path={"Login1"}
+                element={<Login1/>}
               />
              
               <Route path="*" element={<ErrorPage />} />
