@@ -12,9 +12,9 @@ class Home extends React.Component {
  <header class="header">
 
       <div class="h-content">
-        <h1><span>Shikshak</span><br></br>A  Learning plateform</h1>
+        <h1><span>Shikshak</span><br></br>A  Learning Platform</h1>
       <p>Connect, Learn & Grow </p>
-      <Link to="/React-Sidebar-example/Login">
+      <Link to="Login">
       <button class="btn">Get Started</button>
     </Link>
       </div>
@@ -29,14 +29,14 @@ class Home extends React.Component {
   <div class="card1">
  
       <div class="card-content">
-      <Link to="/React-Sidebar-example/Login"> <h3>Student login</h3></Link>
+      <Link to="Login"> <h3>Student login</h3></Link>
         
         </div>
     </div>
     <div class="card2">
   
       <div class="card-content">
-      <Link to="React-Sidebar-example/teacher"> <h3>Teacher Login</h3></Link> 
+      <Link to="teacher"> <h3>Teacher Login</h3></Link> 
         
         </div>
     </div>
@@ -57,15 +57,19 @@ class Home extends React.Component {
   <div class="card4">
  
       <div class="content">
-        <p>Our teacher login portal connects experienced educators with motivated students and provides access to teaching resources and professional development opportunities.</p>
+        <p>
+        Our student login portal provides personalized learning resources and connects students with experienced teachers to help them succeed in their education.
+
+        </p>
         
         </div>
     </div>
     <div class="card5">
   
       <div class="content">
-        <p>Our student login portal provides personapzed learning resources and connects students with experienced teachers to help them succeed in their education.
-
+        <p>
+        Our teacher login portal connects experienced educators with motivated students and provides access to teaching resources and professional development opportunities.
+          
         </p>
         
         </div>
@@ -73,7 +77,7 @@ class Home extends React.Component {
     <div class="card6">
   
       <div class="content">
-        <p>Our subject selection feature provides students with access to a wide range of subjects and connects them with speciapzed teachers who can help them achieve.
+        <p>Our subject selection feature provides students with access to a wide range of subjects and connects them with specialized teachers who can help them achieve.
 
         </p>
         
@@ -94,9 +98,9 @@ class Home extends React.Component {
 </div>
     <div class="col">
       <h2>Office</h2>
-      <p>Guwahti</p>
-      <p>Beltola Tiniali</p>
-      <p>Kamrup, PIN 781001, Assam</p>
+      <p>Milanpur Tiniali</p>
+      <p>Chandmari</p>
+      <p>Guwahati, PIN 781021, Assam</p>
       <p class="email-id">shikshak.as.classes@gmail.com</p>
       <h4>+91 - 7002074794</h4>
     </div>
