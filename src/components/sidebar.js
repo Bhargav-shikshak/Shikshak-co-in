@@ -17,31 +17,31 @@ const Sidebar = () => {
       <ul>
       <li>
       
-        <Link to="React-Sidebar-example/ErrorPage">
+        <Link to="ErrorPage">
             <span className="right-align">Home</span>
           </Link>
 
           </li>
         <li>
-          <Link to="React-Sidebar-example/teacher">
+          <Link to="teacher">
             <span className="right-align">Teacher</span>
           </Link>
         </li>
         <li>
-          <Link to="React-Sidebar-example/student">
+          <Link to="student">
             <span className="right-align">Student</span>
           </Link>
         </li>
       
         <li>
-          <Link to="React-Sidebar-example/Login">
+          <Link to="Login">
             <span className="right-align">StudentLogIn</span>
           </Link>
          
         </li>
         <li>
-          <Link to="React-Sidebar-example/Loginteacher">
-            <span className="right-align">TeacherLogin</span>
+          <Link to="Login1">
+            <span className="right-align">TeacherLogIn</span>
           </Link>
          
         </li>
