@@ -109,7 +109,7 @@ class Teachers extends Component {
 
       console.log("Teacher signed up successfully:", user);
 
-      window.location.href = "/React-Sidebar-example/Loginteacher";
+      window.location.href = "Login1";
     } catch (error) {
       console.error("Teacher sign-up error:", error.message);
     }
