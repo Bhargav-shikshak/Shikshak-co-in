@@ -138,7 +138,7 @@ class Students extends Component {
       });
 
       console.log("Student added successfully!");
-      window.location.href = "/React-Sidebar-example/Login";
+      window.location.href = "Login";
     } catch (error) {
       console.error("Error adding student:", error.message);
     }
