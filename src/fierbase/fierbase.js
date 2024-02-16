@@ -4,21 +4,13 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA54xx6hOxIGs9kgQ2Ycwf-s1b71ZWTdC8",
-
-  authDomain: "ben10-8cc74.firebaseapp.com",
-
-  databaseURL: "https://ben10-8cc74-default-rtdb.firebaseio.com",
-
-  projectId: "ben10-8cc74",
-
-  storageBucket: "ben10-8cc74.appspot.com",
-
-  messagingSenderId: "65797307844",
-
-  appId: "1:65797307844:web:40d6fb12ec64626825b891",
-
-  measurementId: "G-T79DZBMWRS"
+  apiKey: "AIzaSyDREUQu13iB9jDIXPhXHf_pAWQ4B-RiWbo",
+  authDomain: "shikshak-2c92a.firebaseapp.com",
+  projectId: "shikshak-2c92a",
+  storageBucket: "shikshak-2c92a.appspot.com",
+  messagingSenderId: "829102586445",
+  appId: "1:829102586445:web:5d1af34169bff6f8f37a04",
+  measurementId: "G-8PX896J5GR"
 
 };
 
