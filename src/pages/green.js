@@ -96,7 +96,7 @@ class Greens extends Component {
                 teacherName={teacherData[selectedTeacherForPopup].teacherName}
                 address={teacherData[selectedTeacherForPopup].address}
                 phone={teacherData[selectedTeacherForPopup].phone}
-                teacherId={teacherData[selectedTeacherForPopup].teacherId}
+                teacherId={teacherData[selectedTeacherForPopup].uid}
                 email={teacherData[selectedTeacherForPopup].email}
                 qualification={teacherData[selectedTeacherForPopup]. qualification}
 

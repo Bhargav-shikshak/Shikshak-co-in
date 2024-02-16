@@ -19,21 +19,6 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [teacherData, setTeacherData] = useState(null);
 
-  const handleGoogleAuth = async () => {
-    const auth = getAuth(app);
-    try {
-      // Set the persistence to 'none' or 'local'
-      await setPersistence(auth, browserSessionPersistence);
-
-      const result = await signInWithPopup(auth, provider);
-      const newUser = result.user;
-      setUser(newUser);
-      console.log("User signed in with Google:", newUser);
-      fetchTeacherData(newUser.email);
-    } catch (error) {
-      console.error("Google authentication error:", error.message);
-    }
-  };
 
   const handleEmailAuth = async () => {
     const auth = getAuth(app);
@@ -95,19 +80,24 @@ const Login = () => {
 
   return (
     <div className="loginfirst">
-      <h1 style={{marginTop:"30px"}}>Teacher Login Page</h1>
+      <h1 style={{ marginTop: "30px" }}>Teacher Login Page</h1>
       {user ? (
         <div>
           <p>Welcome, {user.displayName || user.email}!</p>
-          <button style={{float:"right", backgroundColor:"blue"}} onClick={handleLogOut}>Log Out</button>
+          <button
+            style={{ float: "right", backgroundColor: "blue" }}
+            onClick={handleLogOut}
+          >
+            Log Out
+          </button>
           {teacherData && (
             <div>
               <h2>Teacher Data</h2>
               <p>Email: {teacherData.email}</p>
               <p>Teacher Name: {teacherData.Name}</p>
-              <p>Teacher ID: {teacherData.teacherId}</p>
+              <p>Teacher ID: {teacherData.teacherIds}</p>
               <p>Status: {teacherData.Status}</p>
-              <p> StudentId: {teacherData.StudentId}</p>
+              <p>StudentId: {teacherData.StudentId}</p>
               {/* Add more properties as needed */}
             </div>
           )}
@@ -135,6 +125,7 @@ const Login = () => {
           <br />
           <div>
             <button onClick={handleEmailAuth}>Login with Email</button>
+       
           </div>
         </div>
       )}

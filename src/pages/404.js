@@ -95,9 +95,9 @@ class Home extends React.Component {
     <div class="col">
       <h2>Office</h2>
       <p>Guwahti</p>
-      <p>Beltola Tiniap</p>
+      <p>Beltola Tiniali</p>
       <p>Kamrup, PIN 781001, Assam</p>
-      <p class="email-id">Bhargavkapta@gmail.com</p>
+      <p class="email-id">shikshak.as.classes@gmail.com</p>
       <h4>+91 - 7002074794</h4>
     </div>
     <div class="col">

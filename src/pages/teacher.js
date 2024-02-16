@@ -8,7 +8,7 @@ class Teachers extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      teacherId: "",
+      teacherId: "", // No need to manually set this
       teacherName: "",
       email: "",
       password: "",
@@ -55,7 +55,6 @@ class Teachers extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     const {
-      teacherId,
       teacherName,
       email,
       password,
@@ -79,8 +78,7 @@ class Teachers extends Component {
       const teachersRef = ref(getDatabase(), "teachers");
 
       push(teachersRef, {
-        uid: user.uid,
-        teacherId,
+        uid: user.uid, // Automatically assigned UID
         teacherName,
         email,
         image,
@@ -95,7 +93,6 @@ class Teachers extends Component {
       });
 
       this.setState({
-        teacherId: "",
         teacherName: "",
         email: "",
         password: "",
@@ -120,7 +117,6 @@ class Teachers extends Component {
 
   render() {
     const {
-      teacherId,
       teacherName,
       email,
       password,
@@ -145,17 +141,6 @@ class Teachers extends Component {
             <form onSubmit={this.handleSubmit}>
               <div className="user-details">
                 <div className="input-box">
-                  <span className="details">Enter Teacher ID</span>
-                  <input
-                    type="text"
-                    name="teacherId"
-                    value={teacherId}
-                    onChange={this.handleChange}
-                    placeholder="Enter your ID"
-                    required
-                  />
-                </div>
-                <div className="input-box">
                   <span className="details">Enter Teacher Name</span>
                   <input
                     type="text"
@@ -170,7 +155,7 @@ class Teachers extends Component {
                 <div className="input-box">
                   <span className="details">Email</span>
                   <input
-                    type="text"
+                    type="email"
                     name="email"
                     value={email}
                     onChange={this.handleChange}
@@ -181,7 +166,7 @@ class Teachers extends Component {
                 <div className="input-box">
                   <span className="details">Password</span>
                   <input
-                    type="text"
+                    type="password"
                     name="password"
                     value={password}
                     onChange={this.handleChange}
@@ -294,7 +279,7 @@ class Teachers extends Component {
                     <option value="math">Math</option>
                     <option value="physics">Physics</option>
                     <option value="chemistry">Chemistry</option>
-                    <option                     value="biology">Biology</option>
+                    <option value="biology">Biology</option>
                     <option value="computerScience">Computer Science</option>
                     <option value="english">English</option>
                     <option value="history">History</option>

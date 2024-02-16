@@ -8,7 +8,6 @@ class Students extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      studentId: "",
       studentName: "",
       parentName: "",
       age: "",
@@ -61,7 +60,6 @@ class Students extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     const {
-      studentId,
       studentName,
       parentName,
       age,
@@ -95,7 +93,7 @@ class Students extends Component {
       const studentsRef = ref(getDatabase(), "students");
 
       push(studentsRef, {
-        studentId,
+        studentId: uid, // Setting studentId as UID
         studentName,
         parentName,
         age,
@@ -118,7 +116,7 @@ class Students extends Component {
       });
 
       this.setState({
-        studentId: "",
+        // Clearing the form fields
         studentName: "",
         parentName: "",
         age: "",
@@ -148,7 +146,6 @@ class Students extends Component {
 
   render() {
     const {
-      studentId,
       studentName,
       parentName,
       age,
@@ -180,35 +177,24 @@ class Students extends Component {
           <form onSubmit={this.handleSubmit}>
             <div className="user-details">
               <div className="input-box">
-                <span className="details">Enter student ID</span>
-                <input
-                  type="text"
-                  name="studentId"
-                  value={studentId}
-                  onChange={this.handleChange}
-                  placeholder="Enter your ID"
-                  required
-                />
-              </div>
-              <div className="input-box">
-                <span className="details">Enter student Name</span>
+                <span className="details">Student Name</span>
                 <input
                   type="text"
                   name="studentName"
                   value={studentName}
                   onChange={this.handleChange}
-                  placeholder="Enter your name"
+                  placeholder="Enter student's name"
                   required
                 />
               </div>
               <div className="input-box">
-                <span className="details">Parents Name</span>
+                <span className="details">Parent Name</span>
                 <input
                   type="text"
                   name="parentName"
                   value={parentName}
                   onChange={this.handleChange}
-                  placeholder="Enter parents name"
+                  placeholder="Enter parent's name"
                   required
                 />
               </div>
@@ -219,7 +205,7 @@ class Students extends Component {
                   name="age"
                   value={age}
                   onChange={this.handleChange}
-                  placeholder="Enter your Age"
+                  placeholder="Enter age"
                   required
                 />
               </div>
@@ -230,7 +216,7 @@ class Students extends Component {
                   name="phone"
                   value={phone}
                   onChange={this.handleChange}
-                  placeholder="Enter your Phone number"
+                  placeholder="Enter phone number"
                   required
                 />
               </div>
@@ -241,29 +227,29 @@ class Students extends Component {
                   name="alternatePhone"
                   value={alternatePhone}
                   onChange={this.handleChange}
-                  placeholder="Enter your Phone number"
+                  placeholder="Enter alternate phone number"
                   required
                 />
               </div>
               <div className="input-box">
                 <span className="details">Email</span>
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   value={email}
                   onChange={this.handleChange}
-                  placeholder="Enter your email"
+                  placeholder="Enter email"
                   required
                 />
               </div>
               <div className="input-box">
                 <span className="details">Password</span>
                 <input
-                  type="text"
+                  type="password"
                   name="password"
                   value={password}
                   onChange={this.handleChange}
-                  placeholder="Enter at least 7 digits or alphabets"
+                  placeholder="Enter password"
                   required
                 />
               </div>
@@ -272,14 +258,13 @@ class Students extends Component {
                 <label htmlFor="fileInput" className="custom-file-input">
                   Choose File
                 </label>
-                <div style={{height:"50px", width:"60px"}}> <input
+                <input
                   type="file"
                   id="fileInput"
                   accept=".jpg, .jpeg, .png"
                   onChange={this.handleImageChange}
                   required
                 />
-                </div>
                 {image && (
                   <img src={image} alt="Preview" className="preview-image" />
                 )}
@@ -297,7 +282,7 @@ class Students extends Component {
                   name="address"
                   value={address}
                   onChange={this.handleChange}
-                  placeholder="Enter your Address"
+                  placeholder="Enter address"
                   required
                 />
               </div>
@@ -308,7 +293,7 @@ class Students extends Component {
                   name="city"
                   value={city}
                   onChange={this.handleChange}
-                  placeholder="Enter your City"
+                  placeholder="Enter city"
                   required
                 />
               </div>
@@ -319,7 +304,7 @@ class Students extends Component {
                   name="state"
                   value={state}
                   onChange={this.handleChange}
-                  placeholder="Enter your state"
+                  placeholder="Enter state"
                   required
                 />
               </div>
@@ -341,7 +326,7 @@ class Students extends Component {
                   name="college"
                   value={college}
                   onChange={this.handleChange}
-                  placeholder="Enter your college name"
+                  placeholder="Enter college name"
                   required
                 />
               </div>
@@ -352,7 +337,7 @@ class Students extends Component {
                   name="cgpaPercentage"
                   value={cgpaPercentage}
                   onChange={this.handleChange}
-                  placeholder="Enter your cgpa/percentage"
+                  placeholder="Enter CGPA/Percentage"
                   required
                 />
               </div>
