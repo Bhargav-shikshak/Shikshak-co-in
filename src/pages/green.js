@@ -54,6 +54,7 @@ class Greens extends Component {
                
                   
                   <th>Actions</th>
+         <th>Price</th>
                 </tr>
               </thead>
               <tbody>
@@ -78,6 +79,7 @@ class Greens extends Component {
                           this.handleRegisterClick(key);
                         }}>Register</button>
                       </td>
+                       <td>{value.additionalNote}</td>
                     </tr>
                   ))}
               </tbody>
