@@ -77,7 +77,7 @@ class Greens extends Component {
                         <button onClick={(e) => {
                           e.stopPropagation();
                           this.handleRegisterClick(key);
-                        }}>Register</button>
+                        }}>Book Now</button>
                       </td>
                        <td>{value.additionalNote}</td>
                     </tr>
