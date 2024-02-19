@@ -1,0 +1,29 @@
+
+  .teacher-student {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+
+  .teacher-student h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .teacher-student table {
+    width: 100%;
+    border-collapse: collapse;
+
+  }
+
+  .teacher-student table td:nth-child(odd) {
+    background-color: rgb(159, 196, 245);
+    font-weight: 600;
+  }
+
+  .teacher-student table td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+  }
+
