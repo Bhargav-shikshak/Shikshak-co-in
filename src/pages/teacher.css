@@ -1,29 +1,283 @@
 
-  .teacher-student {
-    margin: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-  }
 
-  .teacher-student h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+.teabody
+{
+  display: flex;
+  height: 50%;
+ 
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  .teacher-student table {
-    width: 100%;
-    border-collapse: collapse;
+.teacontainer
+{
+  margin-top: 2cm;
+  max-width: 700px;
+  width: 500vh;
+ padding: 40px;
+ 
+  border-radius: 10px;
+}
 
-  }
+.teacontainer .title
+{
+  font-size: 17px;
+  justify-content: center;
+  font-weight: 500;
+  position: relative;
+  padding: 5px;
+}
 
-  .teacher-student table td:nth-child(odd) {
-    background-color: rgb(159, 196, 245);
-    font-weight: 600;
-  }
+.teacontainer .title::before
+{
+  
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 700px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
 
-  .teacher-student table td {
-    padding: 8px;
-    border: 1px solid #dddddd;
-  }
+.teacontainer .title
+{
+  font-size: 17px;
+  justify-content: center;
+  font-weight: 500;
+  position: relative;
+  padding: 5px;
+  color: #fff;
+}
 
+.teacontainer form .user-details
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0 12px 0;
+  color:#fff;
+}
+form .user-details
+{
+  padding: 10px;
+}
+form .user-details .input-box
+{
+  margin-bottom: 10px;
+  width: calc(100% / 2 - 20px);
+
+}
+/*below is for image container*/
+.input-box input[type="file"] {
+  width: 100%; /* Adjust the width as needed */
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.custom-file-input {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #595959;
+  background-color: #ffffff;
+  border: 1px solid #2980b9;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+/* Style only the image input box */
+.input-box .imagedetails {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.input-box .custom-file-input {
+  margin-top: 5px; /* Adjust spacing if needed */
+  height:25px;
+  width: 310px; /* Set the custom width for the file input container */
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.input-box .custom-file-input:hover {
+  background-color: #2980b9;
+}
+/*above is for image container*/
+.user-details .input-box .details
+{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input
+
+{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 7px;
+  border: 2px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+
+.user-details.input-box input:focus,
+.user-details .input-box input:focus
+{
+  border-color: #9b59b6;
+}
+
+/*User addresee css*/
+.teacontainer .address-title
+{
+  font-size: 17px;
+  justify-content: center;
+  font-weight: 500;
+  position: relative;
+  padding: 5px;
+  color:#fff;
+}
+
+.teacontainer form .user-address
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0 12px 0;
+  color:#fff;
+}
+form .user-address
+{
+  padding: 10px;
+}
+form .user-address .input-box
+{
+  margin-bottom: 10px;
+  width: calc(100% / 2 - 20px);
+
+}
+
+.user-address .input-box .details
+{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-address .input-box input
+
+{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 7px;
+  border: 2px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+
+.user-address.input-box input:focus,
+.user-address .input-box input:focus
+{
+  border-color: #9b59b6;
+}
+
+/*User require css*/
+
+
+
+/*User checkbox css*/
+.teacontainer form .user-checkbox
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0 12px 0;
+  color:#fff;
+}
+form .user-checkbox
+{
+  padding: 10px;
+}
+
+form .user-checkbox .input-box
+{
+  margin-bottom: 10px;
+}
+
+/*User button css*/
+
+.teacontainer  .button {
+  text-align: center;
+  justify-content: end;
+  padding: 20px 30px;
+}
+
+.teacontainer .button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3221cf; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+.teacontainer  .button button:hover {
+  background-color: #007914; 
+}
+/* Styles for the popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the popup content */
+.popup-content {
+  background: #fff; /* White background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift */
+  max-width: 400px; /* Adjust the width as needed */
+  width: 100%;
+  text-align: center;
+}
+
+/* Close button style */
+.popup-close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: #333;
+  background: none;
+  border: none;
+}
+img {
+  max-width: 50vh; /* Make the image responsive */
+  height: auto; /* Maintain the aspect ratio */
+  margin-top: 10px; /* Add some space between the image and the other details */
+}
