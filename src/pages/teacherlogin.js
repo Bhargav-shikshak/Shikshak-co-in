@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import "./teacherlogin.css";
+
 import {
   getAuth,
   signInWithPopup,
@@ -91,15 +93,33 @@ const Login1 = () => {
             Log Out
           </button>
           {teacherData && (
-            <div>
-              <h2>Teacher Data</h2>
-              <p>Email: {teacherData.email}</p>
-              <p>Teacher Name: {teacherData.Name}</p>
-              <p>Teacher ID: {teacherData.teacherIds}</p>
-              <p>Status: {teacherData.Status}</p>
-              <p>StudentId: {teacherData.StudentId}</p>
-              {/* Add more properties as needed */}
-            </div>
+           <div class="teacher-student">
+           <h2>Teacher Data</h2>
+           <table>
+             <tr>
+               <td>Email:</td>
+               <td>{teacherData.email}</td>
+             </tr>
+             <tr>
+               <td>Teacher Name:</td>
+               <td>{teacherData.Name}</td>
+             </tr>
+             <tr>
+               <td>Teacher ID:</td>
+               <td>{teacherData.teacherIds}</td>
+             </tr>
+             <tr>
+               <td>Status:</td>
+               <td>{teacherData.Status}</td>
+             </tr>
+             <tr>
+               <td>StudentId:</td>
+               <td>{teacherData.StudentId}</td>
+             </tr>
+            
+           </table>
+         </div>
+         
           )}
         </div>
       ) : (
