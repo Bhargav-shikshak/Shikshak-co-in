@@ -3,6 +3,7 @@ import { getAuth, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { getDatabase, ref, onValue } from "firebase/database";
 import { app } from "../fierbase/fierbase"; // Assuming you have the correct path to your firebase configuration
 import Greens from "./green";
+
 import "./log.css";
 
 const DisplayComponent = ({ uid, studentName, studentClass }) => {
@@ -79,11 +80,12 @@ const Login = () => {
     <div className="loginfirst">
       <h1 style={{ marginTop: "30px" }}>Student Login Page</h1>
       {user ? (
-        <div>
-          <p>Welcome, {user.displayName || user.email}!</p>
+        <div className="loignfirst-details">
+          <h4>Welcome, {user.displayName || user.email}!</h4>
+         
           <button style={{ float: "right", backgroundColor: "blue" }} onClick={handleLogOut}>Log Out</button>
-          {studentData ? (
-            <DisplayComponent
+           {studentData ? (
+            <DisplayComponent 
               uid={user.uid}
               studentName={studentData.studentName}
               studentClass={studentData.studentClass}
