@@ -43,7 +43,7 @@ const Popup = ({ teacherName,address,phone,teacherId, email, qualification,onClo
           <input
             type="text"
             id="studentId"
-            value={studentId}
+            value={studentId} placeholder="Copy your StudentID & paste"
             onChange={(e) => setStudentId(e.target.value)}
           />
         </div>
