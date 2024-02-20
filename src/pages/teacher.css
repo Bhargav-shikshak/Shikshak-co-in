@@ -1,5 +1,3 @@
-
-
 .teabody
 {
  
@@ -8,11 +6,10 @@
  border-radius: 20px;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 50px;
   
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .teacontainer
 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -21,7 +18,7 @@
   width: 500vh;
   background-color: #f5f5f5;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
- 
+ padding: 30px;
   border-radius: 10px;
 }
 
@@ -33,7 +30,6 @@
   position: relative;
   padding: 5px;
 }
-
 .teacontainer .title::before
 {
   
@@ -45,17 +41,6 @@
   width: 900px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
-
-.teacontainer .title
-{
-  font-size: 17px;
-  justify-content: center;
-  font-weight: 500;
-  position: relative;
-  padding: 5px;
-  color: #000000;
-}
-
 .teacontainer form .user-details
 {
   display: flex;
@@ -74,71 +59,52 @@ form .user-details .input-box
   width: calc(100% / 2 - 20px);
 
 }
-/*below is for image container*/
-.input-box input[type="file"] {
-  width: 100%; /* Adjust the width as needed */
-  opacity: 0;
-  position: absolute;
-  cursor: pointer;
-}
 
-.custom-file-input {
-  display: inline-block;
-  padding: 8px 10px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #3a3a3a;
-  background-color: #ffffff;
-  border: 1px solid #2980b9;
-  border-radius: 7px;
-  cursor: pointer;
-}
+  /*IMAGE FILE */
+
   
 .input-box input[type="file"] {
-  width: 120px; 
-  height: 180px; 
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-}
-
-.input-box .custom-file-input {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 8px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  width: 100px;
-}
-
-.input-box .preview-image {
-  display: block;
-  width: 120px; /* Adjust the width as needed */
-  height: 180px; /* Adjust the height as needed */
-  margin-top: 10px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-}
-.input-box .custom-file-input:hover {
-  background-color: #159f10;
-  color: #fff;
-}
-/*IMAGE FILE */
-/*above is for image container*/
-.user-details .input-box .details
-{
-  display: block;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.user-details .input-box input
-
-{
-  height: 45px;
+    width: 120px; 
+    height: 180px; 
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .input-box .custom-file-input {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .input-box .preview-image {
+    display: block;
+    width: 120px; /* Adjust the width as needed */
+    height: 180px; /* Adjust the height as needed */
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  .input-box .custom-file-input:hover {
+    background-color: #159f10;
+    color: #fff;
+  }
+  /*IMAGE FILE */
+  .user-details .input-box .details
+  {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .user-address .input-box input
+  {
+    height: 45px;
   width: 100%;
   outline: none;
   border-radius: 7px;
@@ -147,15 +113,13 @@ form .user-details .input-box
   font-size: 16px;
   border-bottom-width: 2px;
   transition: all 0.2s ease;
-}
-
-.user-details.input-box input:focus,
-.user-details .input-box input:focus
-{
-  border-color: #9b59b6;
-}
-
-/*User addresee css*/
+  }
+  .user-address .input-box input:focus,
+  .user-address .input-box input:focus
+  {
+    border-color: #9b59b6;
+  }
+  
 .teacontainer .address-title
 {
   font-size: 17px;
@@ -212,11 +176,6 @@ form .user-address .input-box
   border-color: #9b59b6;
 }
 
-/*User require css*/
-
-
-
-/*User checkbox css*/
 .teacontainer form .user-checkbox
 {
   display: flex;
