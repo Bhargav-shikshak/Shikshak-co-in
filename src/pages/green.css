@@ -17,9 +17,7 @@
   }
 
   /* CSS */
-.table-details tbody tr:nth-child(odd) {
-  background-color: #e1e3e4; /* Light gray background for odd rows */
-}
+
 
   .teacher-image {
     width: 70px; /* Adjust the width as needed */
@@ -43,7 +41,7 @@
   
   /* Style for table rows on hover */
   table tbody tr:hover {
-    background-color: #858585;
+    background-color: #bbd1eb;
     cursor: pointer;
   }
   
