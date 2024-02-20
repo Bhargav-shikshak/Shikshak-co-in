@@ -102,6 +102,18 @@ form .user-details .input-box
     font-weight: 500;
     margin-bottom: 5px;
   }
+  .user-details .input-box input
+  {
+    height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 7px;
+  border: 2px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+  }
   .user-address .input-box input
   {
     height: 45px;
@@ -114,7 +126,7 @@ form .user-details .input-box
   border-bottom-width: 2px;
   transition: all 0.2s ease;
   }
-  .user-address .input-box input:focus,
+   .user-details .input-box input:focus,
   .user-address .input-box input:focus
   {
     border-color: #9b59b6;
